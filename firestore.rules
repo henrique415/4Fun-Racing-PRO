@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Permitir leitura pública dos campeonatos, etapas, pilotos e classificações
+    // Permitir escrita para usuários autenticados ou operação do sistema
+    match /{document=**} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

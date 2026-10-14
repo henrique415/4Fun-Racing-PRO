@@ -1,0 +1,10 @@
+{
+  "name": "PitStop Pro - Gestão de Campeonatos de Automobilismo",
+  "description": "Sistema completo para gestão de pontuação, múltiplas categorias, pilotos, etapas com baterias ou volta rápida, gamificação e relatórios em PDF.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

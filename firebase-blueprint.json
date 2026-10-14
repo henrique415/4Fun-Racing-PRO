@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "AppData": {
+      "title": "AppData",
+      "description": "Dados principais do campeonato, pilotos, equipes e configurações",
+      "type": "object",
+      "properties": {
+        "championships": {
+          "type": "array",
+          "description": "Lista de campeonatos"
+        },
+        "drivers": {
+          "type": "array",
+          "description": "Lista de pilotos"
+        },
+        "teams": {
+          "type": "array",
+          "description": "Lista de equipes"
+        },
+        "categories": {
+          "type": "array",
+          "description": "Lista de categorias"
+        },
+        "users": {
+          "type": "array",
+          "description": "Lista de usuários cadastrados"
+        },
+        "menuItems": {
+          "type": "array",
+          "description": "Configuração dos menus"
+        },
+        "discardOptions": {
+          "type": "array",
+          "description": "Configuração das opções de descarte"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Data de atualização ISO"
+        },
+        "version": {
+          "type": "number",
+          "description": "Versão do documento de dados"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "/app_data/{docId}": {
+      "schema": "AppData",
+      "description": "Coleção de dados persistentes do aplicativo"
+    }
+  }
+}
